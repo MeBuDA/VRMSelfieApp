@@ -5,17 +5,9 @@ using UnityEngine;
 public class ToAnimator : MonoBehaviour
 {
     public RuntimeAnimatorController rootAnimator;
-    Animator characterAnimator;
-    void Start()
+    public void SetAnimator(GameObject root)
     {
-        characterAnimator = this.transform.GetChild(0).gameObject.GetComponent<Animator>();
+        var characterAnimator = root.GetComponent<Animator>();
         characterAnimator.runtimeAnimatorController = rootAnimator;
-    }
-    void Update()
-    {
-        if(characterAnimator.runtimeAnimatorController == null)
-        {
-            characterAnimator.runtimeAnimatorController = rootAnimator;
-        }
     }
 }
