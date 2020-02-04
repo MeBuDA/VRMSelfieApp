@@ -6,18 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/StartScene.unity
-    guid: bec4f01a07c35405d9199b02bb980ace
+    path: Assets/Scenes/Start.unity
+    guid: 5e31d30295eaf44069eff04847fd2f93
   - enabled: 1
-    path: Assets/Scene/ModelSelect.unity
-    guid: 87d6b3123251845f0b0d2f7a39d543e5
+    path: Assets/Scenes/Camera.unity
+    guid: ec6fe9f5a3b0a4fef89d138ea240e02b
   - enabled: 1
-    path: Assets/Scene/Camera.unity
-    guid: 4d70b7b397e334de5af12fb811225242
+    path: Assets/Scenes/SelectPicture.unity
+    guid: db285b64f9a2d4d0f91c3a34518c4a2d
   - enabled: 1
-    path: Assets/Scene/SelectPicture.unity
-    guid: 3d4a2b03e2dc84c3998313147b968c67
+    path: Assets/Scenes/ModelSelect.unity
+    guid: c34153e27edc74342bfa9fbd329ac7de
   - enabled: 1
-    path: Assets/Scene/VRMBlendshape.unity
-    guid: cadf2f03403814cf983f173541e146fa
+    path: Assets/Scenes/VRMFaceTracking.unity
+    guid: 368204f359e044fc29bd480c6518c866
   m_configObjects: {}
