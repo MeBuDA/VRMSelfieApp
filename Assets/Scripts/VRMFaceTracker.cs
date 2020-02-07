@@ -11,14 +11,12 @@ public class VRMFaceTracker : MonoBehaviour
 
     private UnityARSessionNativeInterface session;
 
-
     /// <summary>
     /// ARの初期化処理
     /// </summary>
     public void InitializeSession ()
     {
         session = UnityARSessionNativeInterface.GetARSessionNativeInterface ();
-        Application.targetFrameRate = 60;
         ARKitFaceTrackingConfiguration config = new ARKitFaceTrackingConfiguration ();
         config.alignment = UnityARAlignment.UnityARAlignmentGravity;
         config.enableLightEstimation = true;
@@ -58,19 +56,22 @@ public class VRMFaceTracker : MonoBehaviour
 
     void UpdateHead (ARFaceAnchor anchorData)
     {
-        //ARKitが右手軸なのをUnityの左手軸に変更と水平坑はミラーにするように変更
-        float angle = 0.0f;
-        Vector3 axis = new Vector3 (-1, 1, -1);
-        var rot = UnityARMatrixOps.GetRotation (anchorData.transform);
-        rot.ToAngleAxis (out angle, out axis);
-        axis.x = -axis.x;
-        axis.z = -axis.z;
-        head.localRotation = Quaternion.AngleAxis (angle, axis);
+        if (head != null)
+        {
+            //ARKitが右手軸なのをUnityの左手軸に変更と水平坑はミラーにするように変更
+            float angle = 0.0f;
+            Vector3 axis = new Vector3 (-1, 1, -1);
+            var rot = UnityARMatrixOps.GetRotation (anchorData.transform);
+            rot.ToAngleAxis (out angle, out axis);
+            axis.x = -axis.x;
+            axis.z = -axis.z;
+            head.localRotation = Quaternion.AngleAxis (angle, axis);
+        }
     }
     void UpdateFace (ARFaceAnchor anchorData)
     {
         var blendShapes = anchorData.blendShapes;
-        if (blendShapes == null || blendShapes.Count == 0)
+        if (blendShapes == null || blendShapes.Count == 0 || proxy == null)
         {
             return;
         }

@@ -7,11 +7,6 @@ public class LoadStart : MonoBehaviour
 {
     void Start ()
     {
-        if (SceneManager.GetActiveScene ().name == "Load")
-        {
-            SceneManager.LoadScene ("Start");
-            Resources.UnloadUnusedAssets ();
-            System.GC.Collect ();
-        }
+        LoadImageStatic.SelectImage = null;
     }
 }

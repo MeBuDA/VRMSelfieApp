@@ -7,6 +7,8 @@ using VRM;
 
 public class ImportVRM : MonoBehaviour
 {
+    VRMImporterContext context;
+    [SerializeField] SceneTransition next;
     void Awake ()
     {
         ImportVRMAsync_Net4 (LoadVRMPathStatic.Path);
@@ -17,7 +19,7 @@ public class ImportVRM : MonoBehaviour
         var bytes = File.ReadAllBytes (path);
 
         //VRMImporterContextがVRMを読み込む機能を提供します
-        var context = new VRMImporterContext ();
+        context = new VRMImporterContext ();
 
         // GLB形式でJSONを取得しParseします
         context.ParseGlb (bytes);
@@ -33,17 +35,22 @@ public class ImportVRM : MonoBehaviour
 
         var animator = this.GetComponent<ToAnimator> ();
         var camIni = this.GetComponent<CameraIni> ();
-        var IKAni = this.GetComponent<IKIni>();
-        var VRMFaceIni = this.GetComponent<VRMFaceIni>();
-        var VRMFaceTracker = this.GetComponent<VRMFaceTracker>();
+        var IKAni = this.GetComponent<IKIni> ();
+        var VRMFaceIni = this.GetComponent<VRMFaceIni> ();
+        var VRMFaceTracker = this.GetComponent<VRMFaceTracker> ();
 
         animator.SetAnimator (root);
         camIni.CameraInitilize (root);
-        IKAni.IKInitilize(root);
-        VRMFaceIni.VRMFaceInitialize(root);
-        VRMFaceTracker.InitializeSession();
+        IKAni.IKInitilize (root);
+        VRMFaceIni.VRMFaceInitialize (root);
+        VRMFaceTracker.InitializeSession ();
 
         //メッシュを表示します
         context.ShowMeshes ();
+    }
+    public void VRMDestroy ()
+    {
+        context.Dispose ();
+        next.Transition();
     }
 }

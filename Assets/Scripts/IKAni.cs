@@ -11,7 +11,7 @@ public class IKAni : MonoBehaviour
 
     private float lookTotalWeight = 1.0f;
     private float bodyWeight = 1.0f;
-    private float headWeight = 1.0f;
+    private float headWeight = 0f;
     private float eyeWeight = 0.4f;
 
     void OnAnimatorIK (int layerIndex)
