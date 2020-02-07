@@ -8,28 +8,28 @@ public class DragImage : MonoBehaviour
     [SerializeField] RectTransform rect;
     [SerializeField] RectTransform root;
     private Vector3 mousePos;
-    void Update()
+    void Update ()
     {
-        Drag();
+        Drag ();
     }
-    private void Drag()
+    private void Drag ()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown (0))
         {
-            mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition) * Camera.main.fieldOfView;
+            mousePos = Camera.main.ScreenToViewportPoint (Input.mousePosition) * Camera.main.fieldOfView;
         }
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton (0))
         {
-            Vector3 diff = mousePos - Camera.main.ScreenToViewportPoint(Input.mousePosition) * Camera.main.fieldOfView;
+            Vector3 diff = mousePos - Camera.main.ScreenToViewportPoint (Input.mousePosition) * Camera.main.fieldOfView;
 
             if (Input.touchSupported)
             {
-                diff = mousePos - Camera.main.ScreenToViewportPoint(Input.GetTouch(0).position) * Camera.main.fieldOfView;
+                diff = mousePos - Camera.main.ScreenToViewportPoint (Input.GetTouch (0).position) * Camera.main.fieldOfView;
             }
-            diff = Vector3.Scale(diff, Vector3.up);
-            rect.position += diff;
+            diff = Vector3.Scale (diff, Vector3.up);
+            rect.position += diff * 0.1f;
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp (0))
         {
             mousePos = Vector3.zero;
         }
@@ -38,11 +38,11 @@ public class DragImage : MonoBehaviour
         var range = rect.sizeDelta.y / 2f - root.sizeDelta.y / 2f;
         if (range < rect.localPosition.y)
         {
-            rect.localPosition = new Vector3(0, range, 0);
+            rect.localPosition = new Vector3 (0, range, 0);
         }
         if (-range > rect.localPosition.y)
         {
-            rect.localPosition = new Vector3(0, -range, 0);
+            rect.localPosition = new Vector3 (0, -range, 0);
         }
     }
 }
