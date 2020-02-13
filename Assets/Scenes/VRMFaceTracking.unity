@@ -1196,6 +1196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPos: {fileID: 1324929576}
+  Reset: {fileID: 1324929578}
 --- !u!114 &364869795200216927
 MonoBehaviour:
   m_ObjectHideFlags: 0

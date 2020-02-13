@@ -8,19 +8,20 @@ public class CharacterCard : MonoBehaviour
 {
     [SerializeField] private Text title;
     [SerializeField] private Text version;
-    [SerializeField] private Text violence;
-    [SerializeField] private Text sexual;
-    [SerializeField] private Text commercial;
+    [SerializeField] private Image violence;
+    [SerializeField] private Image sexual;
+    [SerializeField] private Image commercial;
     [SerializeField] private RawImage thumbnail;
+    [SerializeField] private Sprite maru,batu; 
     private string path;
 
     public void SetMetaText (VRMMetaObject meta)
     {
         title.text = meta.Title;
         version.text = meta.Version;
-        violence.text = meta.ViolentUssage.ToString ();
-        sexual.text = meta.SexualUssage.ToString ();
-        commercial.text = meta.CommercialUssage.ToString ();
+        violence.sprite = isLicence(meta.ViolentUssage);
+        sexual.sprite = isLicence(meta.SexualUssage);
+        commercial.sprite = isLicence(meta.CommercialUssage);
     }
 
     public void SetThumbnail (Texture2D tex)
@@ -30,6 +31,18 @@ public class CharacterCard : MonoBehaviour
     public void SetPath (string vrm)
     {
         path = vrm;
+    }
+
+    private Sprite isLicence(UssageLicense tex)
+    {
+        if(tex == UssageLicense.Allow)
+        {
+            return maru;
+        }
+        else
+        {
+            return batu;
+        }
     }
 
     public void OnLoadVRMPath ()
