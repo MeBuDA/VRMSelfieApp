@@ -9,6 +9,7 @@ public class ImportVRM : MonoBehaviour
 {
     VRMImporterContext context;
     [SerializeField] SceneTransition next;
+    [SerializeField] GameObject Loading;
     void Awake ()
     {
         ImportVRMAsync_Net4 (LoadVRMPathStatic.Path);
@@ -47,6 +48,7 @@ public class ImportVRM : MonoBehaviour
 
         //メッシュを表示します
         context.ShowMeshes ();
+        Loading.SetActive(false);
     }
     public void VRMDestroy ()
     {
