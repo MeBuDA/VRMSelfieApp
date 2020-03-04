@@ -5,48 +5,27 @@ using UnityEngine;
 
 public class ScreenShot : MonoBehaviour
 {
-    [DllImport ("__Internal")]
-    private static extern void SaveToAlbum (string path);
-
     [SerializeField] GameObject canvas;
-
-    IEnumerator SaveToCameraroll (string path)
-    {
-        // ファイルが生成されるまで待つ
-        while (true)
-        {
-            if (File.Exists (path))
-                break;
-            yield return null;
-        }
-
-        SaveToAlbum (path);
-    }
 
     public void Shot ()
     {
-        StartCoroutine("ShotandSave");
+        StartCoroutine ("ShotandSave");
     }
-    IEnumerator ShotandSave()
+    IEnumerator ShotandSave ()
     {
 
         UIStateChange.Toggle (canvas);
-        yield return new WaitForEndOfFrame();
-#if UNITY_EDITOR
-        Debug.Log("sda");
-#else
-        string filename = "test.png";
-        string path = Application.persistentDataPath + "/" + filename;
+        yield return new WaitForEndOfFrame ();
 
-        // 以前のスクリーンショットを削除する
-        File.Delete (path);
+        Texture2D ss = new Texture2D (Screen.width, Screen.height, TextureFormat.RGB24, false);
+        ss.ReadPixels (new Rect (0, 0, Screen.width, Screen.height), 0, 0);
+        ss.Apply ();
 
-        // スクリーンショットを撮影する
-        ScreenCapture.CaptureScreenshot (filename);
+        // Save the screenshot to Gallery/Photos
+        NativeGallery.SaveImageToGallery (ss, "GalleryTest", "Image.png");
 
-        // カメラロールに保存する
-        StartCoroutine (SaveToCameraroll (path));
-#endif
+        // To avoid memory leaks
+        Destroy (ss);
         UIStateChange.Toggle (canvas);
     }
 }

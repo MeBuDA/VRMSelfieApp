@@ -672,8 +672,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fc979afdeda471d980648b4efaddeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: {fileID: 21300000, guid: f2824427118aa4b3a9fe33467064d74a, type: 3}
-  rotation: {fileID: 21300000, guid: df36d7c1ae4d14f78b74868ebd1455ae, type: 3}
+  move: {fileID: 21300000, guid: 40195c7517c034e3a8cd195db8aa1e20, type: 3}
+  rotation: {fileID: 21300000, guid: 678c4e58fd8dc4510b8e6e0307bf4f6c, type: 3}
   image: {fileID: 1217323233}
 --- !u!114 &1217323232
 MonoBehaviour:
