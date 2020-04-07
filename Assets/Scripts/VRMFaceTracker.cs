@@ -10,6 +10,7 @@ public class VRMFaceTracker : MonoBehaviour
     public VRMBlendShapeProxy proxy { set; get; }
 
     private UnityARSessionNativeInterface session;
+    [SerializeField] private GameObject faceImage;
 
     /// <summary>
     /// ARの初期化処理
@@ -28,11 +29,11 @@ public class VRMFaceTracker : MonoBehaviour
             UnityARSessionNativeInterface.ARFaceAnchorAddedEvent += FaceAdded;
             UnityARSessionNativeInterface.ARFaceAnchorUpdatedEvent += FaceUpdated;
             UnityARSessionNativeInterface.ARFaceAnchorRemovedEvent += FaceRemoved;
-
         }
         else
         {
             //利用できない場合
+            faceImage.SetActive(false);
             return;
         }
     }
@@ -41,6 +42,7 @@ public class VRMFaceTracker : MonoBehaviour
     {
         UpdateHead (anchorData);
         UpdateFace (anchorData);
+        faceImage.SetActive(false);
     }
     void FaceUpdated (ARFaceAnchor anchorData)
     {
@@ -52,6 +54,7 @@ public class VRMFaceTracker : MonoBehaviour
     {
         // 顔の認識ができなくなった場合の処理
         head.localRotation = Quaternion.identity;
+        faceImage.SetActive(true);
     }
 
     void UpdateHead (ARFaceAnchor anchorData)
@@ -60,7 +63,7 @@ public class VRMFaceTracker : MonoBehaviour
         {
             //ARKitが右手軸なのをUnityの左手軸に変更と水平坑はミラーにするように変更
             float angle = 0.0f;
-            Vector3 axis = new Vector3 (-1, 1, -1);
+            Vector3 axis = Vector3.zero;
             var rot = UnityARMatrixOps.GetRotation (anchorData.transform);
             rot.ToAngleAxis (out angle, out axis);
             axis.x = -axis.x;
