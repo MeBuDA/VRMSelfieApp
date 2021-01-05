@@ -37,14 +37,14 @@ public class ImportVRM : MonoBehaviour
         var animator = this.GetComponent<ToAnimator> ();
         var camIni = this.GetComponent<CameraIni> ();
         var IKAni = this.GetComponent<IKIni> ();
-        var VRMFaceIni = this.GetComponent<VRMFaceIni> ();
-        var VRMFaceTracker = this.GetComponent<VRMFaceTracker> ();
+        //var VRMFaceIni = this.GetComponent<VRMFaceIni> ();
+        //var VRMFaceTracker = this.GetComponent<VRMFaceTracker> ();
 
         animator.SetAnimator (root);
         camIni.CameraInitilize (root);
         IKAni.IKInitilize (root);
-        VRMFaceIni.VRMFaceInitialize (root);
-        VRMFaceTracker.InitializeSession ();
+        //VRMFaceIni.VRMFaceInitialize (root);
+        //VRMFaceTracker.InitializeSession ();
 
         //メッシュを表示します
         context.ShowMeshes ();

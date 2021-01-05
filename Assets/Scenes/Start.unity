@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -172,6 +173,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -314,6 +316,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -443,6 +446,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -529,6 +533,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -603,6 +608,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.7960785, g: 1, b: 0.8000001, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -782,6 +788,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -858,6 +865,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1096,11 +1104,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 9cd1519c94a824a40a1ffd3d043ec886, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -1117,41 +1126,55 @@ MonoBehaviour:
     https://github.com/m2wasabi/VRMQuickMetaLoader.git
 
 
-    MIT License
+    MIT
+    License
 
 
     Copyright (c) 2019 m2wasabi
 
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
+    Permission is hereby granted,
+    free of charge, to any person obtaining a copy
 
-    of this software and associated documentation files (the "Software"), to deal
+    of this software and associated
+    documentation files (the "Software"), to deal
 
-    in the Software without restriction, including without limitation the rights
+    in the Software without restriction,
+    including without limitation the rights
 
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell
 
-    copies of the Software, and to permit persons to whom the Software is
+    copies of the Software, and to permit
+    persons to whom the Software is
 
-    furnished to do so, subject to the following conditions:
+    furnished to do so, subject to the following
+    conditions:
 
 
-    The above copyright notice and this permission notice shall be included in all
+    The above copyright notice and this permission notice shall
+    be included in all
 
     copies or substantial portions of the Software.
 
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    THE
+    SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    AUTHORS
+    OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    LIABILITY,
+    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    OUT OF
+    OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 
     SOFTWARE.
 
@@ -1163,45 +1186,61 @@ MonoBehaviour:
     https://github.com/vrm-c/UniVRM.git
 
 
-    MIT License
+    MIT
+    License
 
 
     Copyright (c) 2018 DWANGO Co., Ltd. for UniVRM
 
-    Copyright (c) 2018 ousttrue for UniGLTF, UniHumanoid
+    Copyright (c)
+    2018 ousttrue for UniGLTF, UniHumanoid
 
-    Copyright (c) 2018 Masataka SUMI for MToon
+    Copyright (c) 2018 Masataka SUMI
+    for MToon
 
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
+    Permission is hereby granted, free of charge, to any person obtaining
+    a copy
 
-    of this software and associated documentation files (the "Software"), to deal
+    of this software and associated documentation files (the "Software"),
+    to deal
 
-    in the Software without restriction, including without limitation the rights
+    in the Software without restriction, including without limitation
+    the rights
 
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell
 
-    copies of the Software, and to permit persons to whom the Software is
+    copies of the Software, and to permit persons to whom the Software
+    is
 
     furnished to do so, subject to the following conditions:
 
 
-    The above copyright notice and this permission notice shall be included in all
+    The above
+    copyright notice and this permission notice shall be included in all
 
-    copies or substantial portions of the Software.
+    copies
+    or substantial portions of the Software.
 
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    THE SOFTWARE IS PROVIDED "AS IS",
+    WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    IMPLIED, INCLUDING BUT NOT LIMITED
+    TO THE WARRANTIES OF MERCHANTABILITY,
 
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    FITNESS FOR A PARTICULAR PURPOSE AND
+    NONINFRINGEMENT. IN NO EVENT SHALL THE
 
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+    FOR ANY CLAIM, DAMAGES OR OTHER
 
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM,
 
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE
+    OR THE USE OR OTHER DEALINGS IN THE
 
     SOFTWARE.
 
@@ -1213,41 +1252,56 @@ MonoBehaviour:
     https://bitbucket.org/Unity-Technologies/unity-arkit-plugin
 
 
-    The MIT License (MIT)
+    The
+    MIT License (MIT)
 
 
     Copyright (c) 2017, Unity Technologies
 
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
+    Permission
+    is hereby granted, free of charge, to any person obtaining a copy
 
-    of this software and associated documentation files (the "Software"), to deal
+    of this
+    software and associated documentation files (the "Software"), to deal
 
-    in the Software without restriction, including without limitation the rights
+    in
+    the Software without restriction, including without limitation the rights
 
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    to
+    use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 
-    copies of the Software, and to permit persons to whom the Software is
+    copies
+    of the Software, and to permit persons to whom the Software is
 
-    furnished to do so, subject to the following conditions:
-
-
-    The above copyright notice and this permission notice shall be included in
-
-    all copies or substantial portions of the Software.
+    furnished
+    to do so, subject to the following conditions:
 
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    The above copyright notice
+    and this permission notice shall be included in
 
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    all copies or substantial
+    portions of the Software.
 
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
+    OF ANY KIND, EXPRESS OR
 
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+    OF MERCHANTABILITY,
 
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE
+
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+    DAMAGES OR OTHER
+
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+    ARISING FROM,
+
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN
 
     THE SOFTWARE.
 
@@ -1259,41 +1313,56 @@ MonoBehaviour:
     https://github.com/thedoritos/unimgpicker.git
 
 
-    The MIT License (MIT)
+    The
+    MIT License (MIT)
 
 
     Copyright (c) 2016 Tomohiro Matsumura
 
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
+    Permission
+    is hereby granted, free of charge, to any person obtaining a copy
 
-    of this software and associated documentation files (the "Software"), to deal
+    of this
+    software and associated documentation files (the "Software"), to deal
 
-    in the Software without restriction, including without limitation the rights
+    in
+    the Software without restriction, including without limitation the rights
 
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    to
+    use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 
-    copies of the Software, and to permit persons to whom the Software is
+    copies
+    of the Software, and to permit persons to whom the Software is
 
-    furnished to do so, subject to the following conditions:
-
-
-    The above copyright notice and this permission notice shall be included in all
-
-    copies or substantial portions of the Software.
+    furnished
+    to do so, subject to the following conditions:
 
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    The above copyright notice
+    and this permission notice shall be included in all
 
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    copies or substantial
+    portions of the Software.
 
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
+    OF ANY KIND, EXPRESS OR
 
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+    OF MERCHANTABILITY,
 
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE
+
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+    DAMAGES OR OTHER
+
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+    ARISING FROM,
+
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE
 
     SOFTWARE.'
 --- !u!222 &1345406610
@@ -1356,6 +1425,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1618,6 +1688,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1760,6 +1831,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
