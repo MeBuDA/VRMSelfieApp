@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IKAni : MonoBehaviour
+public class IKAnimationSet : MonoBehaviour
 {
     public Transform CameraAnchorRight { get; set; }
     public Transform CameraAnchorLeft { get; set; }

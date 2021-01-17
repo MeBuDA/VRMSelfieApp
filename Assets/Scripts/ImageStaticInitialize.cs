@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadStart : MonoBehaviour
+public class ImageStaticInitialize : MonoBehaviour
 {
     void Start ()
     {

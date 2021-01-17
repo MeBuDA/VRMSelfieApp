@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -174,6 +175,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -207,8 +209,8 @@ GameObject:
   - component: {fileID: 696535818}
   - component: {fileID: 696535817}
   - component: {fileID: 696535816}
-  - component: {fileID: 696535815}
   - component: {fileID: 696535814}
+  - component: {fileID: 696535815}
   m_Layer: 5
   m_Name: BG
   m_TagString: BG
@@ -237,7 +239,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 696535813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 964df415230be4bd4a26a22117e4eae5, type: 3}
+  m_Script: {fileID: 11500000, guid: 69651896b58ed425492e526458dc6ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &696535816
@@ -400,7 +402,7 @@ GameObject:
   - component: {fileID: 948465356}
   - component: {fileID: 948465355}
   m_Layer: 5
-  m_Name: BackScene
+  m_Name: BackSceneButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -507,6 +509,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -582,6 +585,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -655,6 +659,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -869,8 +874,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1439633104}
   - component: {fileID: 1439633102}
-  - component: {fileID: 1439633106}
   - component: {fileID: 1439633107}
+  - component: {fileID: 1439633103}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -895,6 +900,18 @@ MonoBehaviour:
   uiNextGameObject: {fileID: 996061177}
   uiStartGameOcject: {fileID: 5694286}
   rect: {fileID: 1098188383}
+--- !u!114 &1439633103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439633101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c320d0381e9924cbe8b4e9751adb046d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1439633104
 Transform:
   m_ObjectHideFlags: 0
@@ -909,18 +926,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1439633106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439633101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2fe05bf48ef34c51b3c6311b37aa280, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1439633107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -949,7 +954,7 @@ GameObject:
   - component: {fileID: 1533945284}
   - component: {fileID: 1533945283}
   m_Layer: 5
-  m_Name: OK
+  m_Name: OKButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1067,6 +1072,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1101,7 +1107,7 @@ GameObject:
   - component: {fileID: 1536383722}
   - component: {fileID: 1536383721}
   m_Layer: 5
-  m_Name: Retake
+  m_Name: RetakeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1195,6 +1201,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1229,7 +1236,7 @@ GameObject:
   - component: {fileID: 1964278976}
   - component: {fileID: 1964278975}
   m_Layer: 5
-  m_Name: StartNativeCamera
+  m_Name: StartNativeCameraButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1323,6 +1330,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

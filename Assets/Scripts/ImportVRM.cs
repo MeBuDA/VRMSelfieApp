@@ -35,13 +35,13 @@ public class ImportVRM : MonoBehaviour
         root.transform.SetParent (transform, false);
 
         var animator = this.GetComponent<ToAnimator> ();
-        var camIni = this.GetComponent<CameraIni> ();
-        var IKAni = this.GetComponent<IKIni> ();
+        var camIni = this.GetComponent<CameraInitialize> ();
+        var IKAni = this.GetComponent<IKInitialize> ();
         //var VRMFaceIni = this.GetComponent<VRMFaceIni> ();
         //var VRMFaceTracker = this.GetComponent<VRMFaceTracker> ();
 
         animator.SetAnimator (root);
-        camIni.CameraInitilize (root);
+        camIni.CameraPositionInitialize(root);
         IKAni.IKInitilize (root);
         //VRMFaceIni.VRMFaceInitialize (root);
         //VRMFaceTracker.InitializeSession ();

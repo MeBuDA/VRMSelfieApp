@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CameraAttach : MonoBehaviour
+public class CameraAttachIfNeeded : MonoBehaviour
 {
     Canvas canvas;
     void Start ()

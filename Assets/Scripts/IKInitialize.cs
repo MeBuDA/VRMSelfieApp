@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IKIni : MonoBehaviour
+public class IKInitialize : MonoBehaviour
 {
     [SerializeField] Transform cameraAnchorRight;
     [SerializeField] Transform cameraAnchorLeft;
@@ -10,8 +10,8 @@ public class IKIni : MonoBehaviour
 
     public void IKInitilize(GameObject root)
     {
-        root.AddComponent<IKAni>();
-        var VRM = root.GetComponent<IKAni>();
+        root.AddComponent<IKAnimationSet>();
+        var VRM = root.GetComponent<IKAnimationSet>();
         VRM.animator = root.GetComponent<Animator>();
         VRM.CameraAnchorLeft = cameraAnchorLeft;
         VRM.CameraAnchorRight = cameraAnchorRight;

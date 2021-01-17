@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 55407664}
   - component: {fileID: 55407663}
   m_Layer: 5
-  m_Name: TakePicture
+  m_Name: NextTakePictureButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 156458683}
   - component: {fileID: 156458686}
   m_Layer: 5
-  m_Name: menue
+  m_Name: MenueButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 193508183}
   - component: {fileID: 193508182}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 486106152}
   m_Layer: 5
-  m_Name: board
+  m_Name: Menue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 566891101}
   - component: {fileID: 566891100}
   m_Layer: 5
-  m_Name: SelectPicture
+  m_Name: NextSelectPictureButtom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1008,7 +1008,7 @@ GameObject:
   - component: {fileID: 1028167173}
   - component: {fileID: 1028167175}
   m_Layer: 0
-  m_Name: Ini
+  m_Name: SetupObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1028167172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2fe05bf48ef34c51b3c6311b37aa280, type: 3}
+  m_Script: {fileID: 11500000, guid: c320d0381e9924cbe8b4e9751adb046d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1345406607

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BGKill : MonoBehaviour
+public class BackgroundKill : MonoBehaviour
 {
     GameObject BG;
     // Start is called before the first frame update

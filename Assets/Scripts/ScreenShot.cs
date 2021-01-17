@@ -14,7 +14,7 @@ public class ScreenShot : MonoBehaviour
     IEnumerator ShotandSave ()
     {
 
-        UIStateChange.Toggle (canvas);
+        UIStateToggle.Toggle (canvas);
         yield return new WaitForEndOfFrame ();
 
         Texture2D ss = new Texture2D (Screen.width, Screen.height, TextureFormat.RGB24, false);
@@ -26,6 +26,6 @@ public class ScreenShot : MonoBehaviour
 
         // To avoid memory leaks
         Destroy (ss);
-        UIStateChange.Toggle (canvas);
+        UIStateToggle.Toggle (canvas);
     }
 }

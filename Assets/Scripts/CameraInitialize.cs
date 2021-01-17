@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraIni : MonoBehaviour
+public class CameraInitialize : MonoBehaviour
 {
     [SerializeField] Transform cameraPos;
     [SerializeField] CameraReset Reset;
-    public void CameraInitilize(GameObject root)
+    public void CameraPositionInitialize(GameObject root)
     {
         var anim = root.GetComponent<Animator>();
         var modelEye = anim.GetBoneTransform (HumanBodyBones.Head);

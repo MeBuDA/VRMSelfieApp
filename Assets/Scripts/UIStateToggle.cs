@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIStateChange : MonoBehaviour
+public class UIStateToggle : MonoBehaviour
 {
     public static void Toggle (GameObject item)
     {

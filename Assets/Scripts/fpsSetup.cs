@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fps : MonoBehaviour
+public class fpsSetup : MonoBehaviour
 {
     void Awake ()
     {

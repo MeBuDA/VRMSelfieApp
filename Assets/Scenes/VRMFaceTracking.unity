@@ -260,7 +260,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 373750396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2fe05bf48ef34c51b3c6311b37aa280, type: 3}
+  m_Script: {fileID: 11500000, guid: c320d0381e9924cbe8b4e9751adb046d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &373750401
@@ -967,6 +967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1324929576}
   - component: {fileID: 1324929578}
+  - component: {fileID: 1324929577}
   m_Layer: 0
   m_Name: CameraOrigin
   m_TagString: Untagged
@@ -989,6 +990,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1324929577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324929575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa0766c74e8e4ee7af91686d353ebfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adjustment: 10
+  adjustmentP: 1000
 --- !u!114 &1324929578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,7 +1073,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 9cd1519c94a824a40a1ffd3d043ec886, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 68
     m_FontStyle: 0
     m_BestFit: 0
@@ -1385,7 +1400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c04de4b2bc3040e8bd3d4d5a5e52136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VRMFace: {fileID: 0}
 --- !u!114 &364869795200216925
 MonoBehaviour:
   m_ObjectHideFlags: 0

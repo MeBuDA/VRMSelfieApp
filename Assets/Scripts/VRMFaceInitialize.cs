@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using VRM;
 
-public class VRMFaceIni : MonoBehaviour
+public class VRMFaceInitialize : MonoBehaviour
 {
     //[SerializeField] VRMFaceTracker VRMFace;
 
-    public void VRMFaceInitialize(GameObject root)
+    public void FaceInitialize(GameObject root)
     {
         var anim = root.GetComponent<Animator>();
         var proxy = root.GetComponent<VRMBlendShapeProxy>();

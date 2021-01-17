@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIChange : MonoBehaviour
+public class CameraControlUIChange : MonoBehaviour
 {
     [SerializeField] private Sprite move;
     [SerializeField] private Sprite rotation;

@@ -36,13 +36,13 @@ public class ImportVRMnonTask : MonoBehaviour
         //モデルをワールド上に配置します
         root.transform.SetParent(transform, false);
         var animator = this.GetComponent<ToAnimator> ();
-        var camIni = this.GetComponent<CameraIni> ();
-        var IKAni = this.GetComponent<IKIni>();
+        var camIni = this.GetComponent<CameraInitialize> ();
+        var IKIni = this.GetComponent<IKInitialize>();
         animator.SetAnimator (root);
-        camIni.CameraInitilize (root);
-        IKAni.IKInitilize(root);
-        var VRMFaceIni = this.GetComponent<VRMFaceIni>();
-        VRMFaceIni.VRMFaceInitialize(root);
+        camIni.CameraPositionInitialize (root);
+        IKIni.IKInitilize(root);
+        var VRMFaceIni = this.GetComponent<VRMFaceInitialize>();
+        VRMFaceIni.FaceInitialize(root);
 
 
         //メッシュを表示します
